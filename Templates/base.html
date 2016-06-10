@@ -1,0 +1,8 @@
+<!DOCTYPE html>
+{% load feincms_tags %}
+
+{% for content in feincms_page.content.main %}
+   <div class="block">
+       {% feincms_render_content content request %}
+   </div>
+{% endfor %}
